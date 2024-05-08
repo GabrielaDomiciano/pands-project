@@ -36,6 +36,8 @@ We can visualize the first 10 rows of the Iris dataset and print its shape. This
 We want to see a statistical summary. To do this we will use describe(). I used .T to transpose the dataset, transform rows into columns and vice versa.
 Note that in the count column, the result was always 150, this could indicate that there are no missing values. To check if there are missing values ​​(NaN) in any column of the iris DataFrame, we can use "isna()".
 
+Os gráficos abaixo mostram as relações das medidas de largura e comprimento de pétalas e sépalas de cada espécie (vide legenda).
+
 
 
 
