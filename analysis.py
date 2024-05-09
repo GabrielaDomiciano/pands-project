@@ -9,53 +9,58 @@ import seaborn as sns
 
 # Let's take a look at the Dataset.
 iris_df = pd.read_csv('iris-data.csv')
-#print(iris_df)
+print(iris_df)
 
 # Empty columns were deleted, deleting these columns helps in viewing the DataFrame.
 iris_df = iris_df.dropna()
-#print(iris_df)
+print(iris_df)
 
 # Calculates descriptive statistics, and saves it to a CSV file called 'summary.csv'
-#iris_df.describe().T.to_csv('summary.csv')
+iris_df.describe().T.to_csv('summary.csv')
 
 # Print the first 10 lines of the DataFrame
-#print(iris_df.head(10))
+print(iris_df.head(10))
 
 # Print the shape, number of rows and columns in the DataFrame.
-#print(iris_df.shape)
+print(iris_df.shape)
 
 # Checks for missing values ​​in any column of DataFrame 'iris_df'
 missing_values = iris_df.isna().any()
-#print(missing_values)
+print(missing_values)
 
 # Inspect types.
 type = iris_df.dtypes
-#print(type)
+print(type)
 
 
 # Lets see the petal length.
 petal_length = iris_df['petal_length']
-#print(petal_length)
+print(petal_length)
 
 # Lets see the petal width.
 petal_width = iris_df['petal_width']
-#print(petal_width)
+print(petal_width)
 
 ## Number the flower per species.
 count = iris_df['species'].value_counts()
-#print(count)
+print(count)
+iris_df['species'].value_counts().plot(kind='bar')
+plt.title('Number of Species')
+plt.legend(title='Quantity per Species', labels=count)
+plt.savefig('Quantity per Species')
+plt.show()
+
 
 # The petal_length per species.
 petal_length = iris_df[['species', 'petal_length']]
-# Show.
-#print(petal_length)
+# Show
+print(petal_length)
 
 # The sepal_length per species.
 sepal_length = iris_df[['species', 'sepal_length']]
 # Show.
-#print(sepal_length)
+print(sepal_length)
 
-'''
 # The plots below show the relationships between the width and length of petals and sepals of species.
 
 # Sets the figure size and creates a scatter plot showing the relationship between petal width and length,
@@ -79,4 +84,3 @@ plt.xlabel('Width')
 plt.ylabel('Length')
 plt.savefig('Sepals Width vs Length')
 plt.show()
-'''
