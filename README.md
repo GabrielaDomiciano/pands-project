@@ -15,11 +15,11 @@ The objective in this project is to do an analysis of the dataset, using the Pyt
 
 To execute the codes, you must have Python installed on your computer. One option is to download Anaconda, which is a free package management environment. It already comes with all the libraries and packages needed to program in Python.
 
-[Anaconda](https://www.anaconda.com).
-[Pyhton](https://www.python.org).
-[Pandas](https://pandas.pydata.org).
-[Numpy](https://numpy.org).
-[Matplotlib](https://matplotlib.org).
+[Anaconda](https://www.anaconda.com).<br>
+[Pyhton](https://www.python.org).<br>
+[Pandas](https://pandas.pydata.org).<br>
+[Numpy](https://numpy.org).<br>
+[Matplotlib](https://matplotlib.org).<br>
 
 I used as editor for Python:[VS Code](https://code.visualstudio.com).
 
