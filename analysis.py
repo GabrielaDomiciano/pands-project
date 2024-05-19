@@ -1,4 +1,4 @@
-# Gabriela Domiciano
+# Gabriela Domiciano Avellar
 
 # Exploratory Analysis: Iris Data_set
 # Import required packages:
@@ -53,8 +53,10 @@ plt.plot(iris_df['species'])
 plt.xlabel("lines")
 plt.savefig('Specie_line')
 plt.show()
+
 count = iris_df['species'].value_counts()
 print(count)
+
 iris_df['species'].value_counts().plot(kind='bar')
 plt.title('Number of Species')
 plt.legend(title='Quantity per Species', labels=count)
